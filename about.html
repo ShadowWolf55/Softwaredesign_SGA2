@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mechanics &amp; Safety | Iron &amp; Powder</title>
+    <style>
+        :root {
+            --bg-dark: #141619;
+            --bg-card: #1e2227;
+            --accent-brass: #c59b27;
+            --text-main: #e2e8f0;
+            --text-muted: #94a3b8;
+            --border-color: #2d333b;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #0d0f11;
+            border-bottom: 2px solid var(--accent-brass);
+            padding: 1.2rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--accent-brass);
+        }
+
+        nav a {
+            color: var(--text-main);
+            text-decoration: none;
+            margin-left: 2rem;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--accent-brass);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 3rem auto;
+            padding: 0 5%;
+        }
+
+        .page-header {
+            margin-bottom: 2.5rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 1.5rem;
+        }
+
+        .page-header h1 {
+            font-size: 2.4rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .page-header p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        .section-title {
+            font-size: 1.6rem;
+            margin: 2.5rem 0 1.2rem;
+            border-left: 4px solid var(--accent-brass);
+            padding-left: 1rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            margin-bottom: 2rem;
+        }
+
+        th, td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        th {
+            background-color: #0d0f11;
+            color: var(--accent-brass);
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+        }
+
+        td {
+            color: var(--text-muted);
+        }
+
+        td strong {
+            color: var(--text-main);
+        }
+
+        .safety-box {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-left: 4px solid var(--accent-brass);
+            padding: 1.5rem 2rem;
+            border-radius: 4px;
+        }
+
+        .safety-box ol {
+            margin-left: 1.2rem;
+            margin-top: 0.75rem;
+        }
+
+        .safety-box li {
+            margin-bottom: 0.75rem;
+            color: var(--text-main);
+        }
+
+        .safety-box span {
+            color: var(--text-muted);
+            display: block;
+            font-size: 0.95rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 5%;
+            margin-top: 4rem;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Iron &amp; Powder</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html" class="active">Mechanics &amp; Safety</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="page-header">
+            <h1>Action Types &amp; Core Safety</h1>
+            <p>Understanding how modern firearms cycle ammunition and the universal rules governing responsible handling.</p>
+        </div>
+
+        <h2 class="section-title">Common Firearm Actions</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Action Type</th>
+                    <th>Operating Mechanism</th>
+                    <th>Primary Characteristics</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Bolt-Action</strong></td>
+                    <td>Manually operated handle locks and unlocks the breech.</td>
+                    <td>High mechanical rigidity, inherent accuracy, and simple maintenance.</td>
+                </tr>
+                <tr>
+                    <td><strong>Lever-Action</strong></td>
+                    <td>A pivoting lever around the trigger guard cycles rounds from a tubular magazine.</td>
+                    <td>Fast follow-up shots for a manual action; iconic 19th-century design.</td>
+                </tr>
+                <tr>
+                    <td><strong>Pump-Action</strong></td>
+                    <td>Sliding forend moved back and forth by the operator's support hand.</td>
+                    <td>Extremely reliable across varied ammunition pressures; standard in shotguns.</td>
+                </tr>
+                <tr>
+                    <td><strong>Semi-Automatic</strong></td>
+                    <td>Harnesses recoil energy or expanding propellant gas to eject and chamber rounds.</td>
+                    <td>Fires one cartridge per trigger pull while automatically resetting the action.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 class="section-title">The Four Universal Rules of Firearm Safety</h2>
+        <div class="safety-box">
+            <ol>
+                <li>
+                    <strong>Treat every firearm as if it were loaded.</strong>
+                    <span>Never assume a chamber is empty; always visually and physically inspect the breech upon picking up a firearm.</span>
+                </li>
+                <li>
+                    <strong>Never point the muzzle at anything you are not willing to destroy.</strong>
+                    <span>Maintain strict muzzle discipline in a safe direction at all times, regardless of mechanical safety settings.</span>
+                </li>
+                <li>
+                    <strong>Keep your finger off the trigger until your sights are on target.</strong>
+                    <span>Rest the trigger finger straight along the frame or receiver outside the trigger guard until ready to fire.</span>
+                </li>
+                <li>
+                    <strong>Be sure of your target and what is beyond it.</strong>
+                    <span>Account for potential over-penetration, ricochets, and the surrounding backstop before taking a shot.</span>
+                </li>
+            </ol>
+        </div>
+    </main>
+
+    <footer>
+        <p>Iron &amp; Powder Archive &bull; Historical &amp; Mechanical Reference Project</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iron &amp; Powder | The Evolution of Firearms</title>
+    <style>
+        :root {
+            --bg-dark: #141619;
+            --bg-card: #1e2227;
+            --accent-brass: #c59b27;
+            --text-main: #e2e8f0;
+            --text-muted: #94a3b8;
+            --border-color: #2d333b;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #0d0f11;
+            border-bottom: 2px solid var(--accent-brass);
+            padding: 1.2rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--accent-brass);
+        }
+
+        nav a {
+            color: var(--text-main);
+            text-decoration: none;
+            margin-left: 2rem;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--accent-brass);
+        }
+
+        .hero {
+            padding: 5rem 5%;
+            text-align: center;
+            background: linear-gradient(rgba(13, 15, 17, 0.85), rgba(20, 22, 25, 0.95));
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+            letter-spacing: 1px;
+        }
+
+        .hero p {
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            color: var(--text-muted);
+            font-size: 1.15rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-brass);
+            color: #0d0f11;
+            padding: 0.8rem 1.8rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 4px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: opacity 0.2s;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 3rem auto;
+            padding: 0 5%;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid var(--accent-brass);
+            padding-left: 1rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 1.5rem;
+        }
+
+        .card h3 {
+            color: var(--accent-brass);
+            margin-bottom: 0.75rem;
+            font-size: 1.3rem;
+        }
+
+        .card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .tag {
+            display: inline-block;
+            background-color: rgba(197, 155, 39, 0.15);
+            color: var(--accent-brass);
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 0.2rem 0.6rem;
+            border-radius: 3px;
+            margin-bottom: 0.75rem;
+            text-transform: uppercase;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 5%;
+            margin-top: 4rem;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Iron &amp; Powder</div>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">Mechanics &amp; Safety</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Engineering, History &amp; Ballistics</h1>
+        <p>An exploration of how metallurgy, chemistry, and mechanical engineering transformed small arms from 13th-century hand cannons into modern precision instruments.</p>
+        <a href="about.html" class="btn">Explore Firearm Mechanics</a>
+    </section>
+
+    <main class="container">
+        <h2 class="section-title">Historical Milestones</h2>
+        <div class="grid">
+            <div class="card">
+                <span class="tag">14th – 17th Century</span>
+                <h3>Matchlock &amp; Flintlock</h3>
+                <p>Early ignition systems relied on burning cords and striking flint against steel frizzens to ignite black powder, revolutionizing infantry tactics across Europe and Asia.</p>
+            </div>
+            <div class="card">
+                <span class="tag">19th Century</span>
+                <h3>Metallic Cartridges</h3>
+                <p>The invention of self-contained brass cartridges with integrated primers eliminated loose powder and enabled reliable breech-loading and repeating firearms.</p>
+            </div>
+            <div class="card">
+                <span class="tag">20th Century – Present</span>
+                <h3>Smokeless Powder &amp; Semi-Autos</h3>
+                <p>Nitrocellulose-based propellants increased muzzle velocities while reducing fouling, paving the way for recoil- and gas-operated repeating actions.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Iron &amp; Powder Archive &bull; Historical &amp; Mechanical Reference Project</p>
+    </footer>
+
+</body>
+</html>
